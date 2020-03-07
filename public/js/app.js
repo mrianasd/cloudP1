@@ -1,6 +1,5 @@
 $(document).ready(function () {
   var pageImages = [];
-  var imagesUrl = [];
   var currentPage = 1;
   var numResults = 0;
   var totalPages = 0;
@@ -26,6 +25,7 @@ $(document).ready(function () {
     $("#previous").hide();
     $("#next").hide();
 
+    imagesUrl = [];
     numResults = search.length;
     totalPages = Math.ceil(numResults / 4);
 
